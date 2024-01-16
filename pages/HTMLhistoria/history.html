@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<!-- We need to move this page to other folder-->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preconnect google fonts- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="nav.js" defer></script>
+    
+    <title> HTML Historia </title>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-main">
+        Skip to main content
+    </a>
+
+    <header class="header header--inverted">
+        <div class = "logo"> 
+            <img src
+            ="/assets/m2logo.svg"/>
+            <span"> M2 </span>
+        </div>  
+
+        <nav class="header__navigation">
+            <ul class="primary-navigation">
+                <li class="primary-navigation__item first">
+                    <a href="#" class="primary-navigation__link">Hem</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="/index.html" class="primary-navigation__link">Grunderna</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Historia</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Tillgänglighet</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Hur funkar det ?</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Genvägar</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Kontakt</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Om mig</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main-content"> 
+        <section class="bg-secondary section history-hero"> 
+            <div class="content-wrapper history-hero__content-wrapper"> 
+                <div> 
+                    <h1 class="heading history-hero__heading"> Htmls historia </h1>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsam quam quae praesentium. Praesentium, nostrum et! 
+                    </p>
+                </div>
+
+                <img src="assets/hero.webp" class="history-hero__img
+                "/> 
+            </div>
+        </section>
+        
+        <section class="content-wrapper history-article__content-wrapper"> 
+            <article class="article">
+                <h2 class="heading article__heading"> Under de första 5 åren </h2>
+                <div class="columns"> 
+                    <p> 
+                        Under de första fem åren (1990-1995) gick HTML igenom ett antal revisioner och fick ett antal tillägg, främst värd först på CERN och sedan på IETF.
+                        Med skapandet av W3C ändrades HTMLs utvecklingsplats igen. Ett första misslyckat försök att utöka HTML 1995, känd som HTML 3.0, gjorde sedan plats för en mer praktisk metod känd som HTML 3.2, som slutfördes 1997. HTML4 följde snabbt senare samma år.
+                    </p>
+                    <br>
+                    <p> 
+   
+                        Året därpå beslutade W3C-medlemskapet att sluta utveckla HTML och istället börja arbeta på en XML-baserad motsvarighet, kallad XHTML. Detta försök började med en omformulering av HTML4 i XML, känd som XHTML 1.0, som inte lade till några nya funktioner förutom den nya serialiseringen, och som slutfördes 2000. Efter XHTML 1.0 vändes W3C:s fokus till att göra det lättare för andra arbetsgrupper att utöka XHTML, under flaggan XHTML Modularization. Samtidigt med detta arbetade W3C också på ett nytt språk som inte var kompatibelt med de tidigare HTML- och XHTML-språken, kallar det XHTML2.
+                    </p>
+                    <img src="assets/main/game-fantasy-website.png" class="article__img" alt="older view on a game-fantasy website"/>
+                </div>    
+            </article> 
+
+            <article class="article">
+                <h2 class="heading article__heading"> DOM-nivåer och nytt interesse för HTML </h2>
+                <div class="columns"> 
+                    <p> 
+                        Runt den tid då HTMLs utveckling stoppades 1998 specificerades delar av API:et för HTML utvecklat av webbläsarleverantörer och publicerades under namnet DOM Level 1 (1998) och DOM Level 2 Core och DOM Level 2 HTML (med start 2000 och som kulminerade 2003). Dessa ansträngningar försvann sedan, med några DOM nivå 3-specifikationer publicerade 2004 men arbetsgruppen stängdes innan alla nivå 3-utkast var färdiga.
+                    </p>
+                    <br>
+                    <p> 
+                        2003 väckte publiceringen av XForms, en teknik som var positionerad som nästa generation av webbformulär, ett förnyat intresse för att utveckla HTML i sig, snarare än att hitta ersättare för det. Detta intresse kom från insikten att XML:s distribution som webbteknik var begränsad till helt nya teknologier (som RSS och senare Atom), snarare än som en ersättning för befintliga distribuerade tekniker (som HTML). 
+                    </p>
+                    <br>
+                    <p> 
+                        Ett “proof of concept” för att visa att det var möjligt att utöka HTML4s formulär för att tillhandahålla många av de funktioner som XForms 1.0 introducerade, utan att webbläsare skulle behöva implementera renderingsmotorer som var inkompatibla med befintliga HTML-webbsidor, var det första resultatet av detta förnyade intresse. I detta tidiga skede, medan utkastet redan var allmänt tillgängligt och input redan begärdes från alla källor, var specifikationen endast under Opera Softwares upphovsrätt.
+                    </p>
+                    <img src="assets/main/dom.jpg" alt="illustration of a dom tree" class="article__img" /> 
+                </div>    
+            </article> 
+
+            <article class="article">
+                <h2 class="heading article__heading"> HTML5 föreslag och avvisning </h2>
+                <div class="columns"> 
+                    <p> 
+                        Idén att HTMLs utveckling skulle återupptas testades vid en W3C-workshop 2004, där några av principerna som ligger till grund för HTML5-arbetet (beskrivs nedan), såväl som det tidigare nämnda tidiga förslaget som täcker bara formulärrelaterade funktioner, presenterades för W3C gemensamt av Mozilla och Opera. Förslaget avslogs med motiveringen att förslaget stred mot den tidigare valda riktningen för webbens utveckling; W3C:s personal och medlemmar röstade för att fortsätta utveckla XML-baserade ersättningar istället.
+                    </p>
+                    <img src="assets/main/html5.jpg" alt="Strong HTML5" />
+                </div>
+            </article>
+
+            <article class="article">
+                <h2 class="heading article__heading"> WHATWG och samarbete med W3C </h2>
+                <div class="columns"> 
+                    <p> 
+                        Kort därefter tillkännagav Apple, Mozilla och Opera tillsammans sin avsikt att fortsätta arbeta med insatsen under paraplyet av en ny plats kallad WHATWG. En offentlig e-postlista skapades och utkastet flyttades till WHATWG-webbplatsen. Upphovsrätten ändrades därefter för att ägas gemensamt av alla tre leverantörerna och för att tillåta återanvändning av specifikationen.
+                    </p>
+                    <br>
+                    <p> 
+                        WHATWG baserades på flera kärnprinciper: särskilt att tekniker måste vara bakåtkompatibla, att specifikationer och implementeringar måste matcha även om detta innebär att man ändrar specifikationen snarare än implementeringarna, samt att specifikationer måste vara tillräckligt detaljerade för att implementeringar kan uppnås. Fullständig driftskompatibilitet utan att omvända varandra.
+                    </p>
+
+                    <p> 
+                        Särskilt det senare kravet krävde att omfattningen av HTML5-specifikationen inkluderar vad som tidigare hade specificerats i tre separata dokument: HTML4, XHTML1 och DOM2 HTML. Det innebar också att inkludera betydligt fler detaljer än vad som tidigare ansetts vara normen.
+                    </p>
+                    <br>
+                    <img src="assets/main/whatwg-w3c.webp" alt="Logos of w3c and whatwg">
+                </div>
+            </article>
+
+            <article class="article"> 
+                <h2 class="heading article__heading"> Skilda mål och enighet </h2>
+
+                <div class="columns">
+                    <p> 
+                        2006 indikerade W3C ett intresse av att trots allt delta i utvecklingen av HTML5, och 2007 bildade W3C en arbetsgrupp för att arbeta med WHATWG om utvecklingen av HTML5-specifikationen. Apple, Mozilla och Opera tillät W3C att publicera specifikationen under W3C-upphovsrätten, samtidigt som de behöll en version med den mindre restriktiva licensen på WHATWG-webbplatsen.
+                    </p>
+
+                    <p> 
+                        Under ett antal år arbetade sedan båda grupperna tillsammans. 2011 kom dock grupperna till slutsatsen att de hade olika mål: W3C ville publicera en "färdig" version av "HTML5", medan WHATWG ville fortsätta arbeta med en Living Standard för HTML, med kontinuerligt underhåll av specifikationen istället för att frysa den i ett tillstånd med kända problem och lägga till nya funktioner efter behov för att utveckla plattformen.
+                    </p>
+                    <br>
+                    <p> 
+                        Under 2019 undertecknade WHATWG och W3C ett avtal om att samarbeta om en enda version av HTML framöver: HTML5.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__nav-container"> 
+            <div class = "logo logo--inverted"> 
+                <img src
+                ="/assets/m2logo.svg"/>
+                <span> M2 </span>
+            </div>  
+            <nav class="footer-navigation"> 
+                <ul class="footer-navigation__list">
+                    <li class="footer-navigation__item"><a href="#">Hem</a></li>
+                    <li class="footer-navigation__item"><a href="/index.html">Grunderna</a></li>
+                    <li class="footer-navigation__item"><a href="/pages/HTMLhistoria/history.html">Historia</a></li>
+                    <li class="footer-navigation__item"><a href="#">Tillgänglighet</a></li>
+                    <li class="footer-navigation__item"><a href="#">Hur funkar det ?</a></li>
+                    <li class="footer-navigation__item"><a href="#">Genvägar</a><li>
+                    <li class="footer-navigation__item"><a href="#">Kontakt</a></li>
+                    <li class="footer-navigation__item"><a href="#">Om mig</a></li>
+                </ul>
+            </nav> 
+        </div>
+        
+        <div class="footer__cta-container"> 
+            <span> Vänligen kontakta oss med frågor eller förslag på förbättringar ! Skicka ett meddelande så återkommer vi snarast. </span>
+            <button class="button"> Ta kontakt nu </button>
+        </div>
+
+    </footer>
+</body>
+</html>

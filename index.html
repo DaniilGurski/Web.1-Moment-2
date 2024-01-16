@@ -18,54 +18,69 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- JS -->
-    <script src="autoFill.js" defer> </script>
-
-    <title>Document</title>
+    <title>Element och egenskaper</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__content-wrapper content-wrapper">
-            <h1 class="header__main-title heading"> WEBB01 - ELEMENT &amp; EGENSKAPER </h1>
+    <a href="#main-content" class="skip-to-main">
+        Skip to main content
+    </a>
 
-            <nav class="header__navigation">
-                <ul class="primary-navigation">
-                    <li class="primary-navigation__item first">
-                        <a href="#" class="primary-navigation__link">Hem</a>
-                    </li>
+    <header class="header header--inverted">
+        <div class = "logo"> 
+            <img src
+            ="assets/m2logo.svg"/>
+            <span"> M2 </span>
+        </div>  
 
-                    <li class="primary-navigation__item">
-                        <a href="#" class="primary-navigation__link">Grunderna</a>
-                    </li>
+        <nav class="header__navigation">
+            <ul class="primary-navigation">
+                <li class="primary-navigation__item first">
+                    <a href="#" class="primary-navigation__link">Hem</a>
+                </li>
 
-                    <li class="primary-navigation__item">
-                        <a href="#" class="primary-navigation__link">Genvägar</a>
-                    </li>
+                <li class="primary-navigation__item">
+                    <a href="/index.html" class="primary-navigation__link">Grunderna</a>
+                </li>
 
-                    <li class="primary-navigation__item">
-                        <a href="#" class="primary-navigation__link">Om mig</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <li class="primary-navigation__item">
+                    <a href="pages/HTMLhistoria/history.html" class="primary-navigation__link">Historia</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Tillgänglighet</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Hur funkar det ?</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Genvägar</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Kontakt</a>
+                </li>
+
+                <li class="primary-navigation__item">
+                    <a href="#" class="primary-navigation__link">Om mig</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="main__content-wrapper content-wrapper">
-        <main class="main">
-            <!-- 
-                Den här delen kan fyllas i automatiskt med hjälp av ett js-script jag gjorde, 
-                men för att se den här delen i github var jag tvungen att manuellt infoga den.
-            -->
+        <main class="main" id="main-content">
             <!-- HTML -->
             <section id="HTML" class="main-section">
-                <h2 class="heading">HTML</h2>
+                <h2 class="heading" tabindex="0">HTML</h2>
 
                 <section class="sub-section" id="struktur">
                     <h3 class="heading">struktur</h3>
                     <div class="tag-board">
                         <p>&lt;!DOCTYPE&gt;</p>
-                        <p>Deklaration för att ange HTML-dokumentets version.</p>
+                        <a href="#">Deklaration för att ange HTML-dokumentets version.</a>
                     </div>
                     <div class="tag-board">
                         <p>&lt;html&gt;</p>
@@ -302,35 +317,37 @@
                     </div>
                 </section>
             </section>
+
+            <aside class="content-panel">
+                <p class="content-panel__title"> Innehåll </p>
+    
+                <ol class="content-panel__list" type="I">
+                    <li>
+                        <a href="#HTML" class="content-panel__link"> HTML </a>
+                        <ol class="content-panel__list">
+                            <li><a href="#struktur" class="content-panel__link">Struktur</a></li>
+                            <li>
+                                <a href="#semantiska-element-layout" class="content-panel__link">Sem.element och layout</a>
+                            </li>
+                            <li><a href="#text-rubriker" class="content-panel__link">Text och rubriker</a></li>
+                            <li><a href="#inline-element" class="content-panel__link">Inline element</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#CSS" class="content-panel__link"> CSS </a>
+                        <ol class="content-panel__list">
+                            <li><a href="#typsnitt och text" class="content-panel__link">Typsnitt och Text</a></li>
+                            <li><a href="#färger" class="content-panel__link">Färger</a></li>
+                            <li><a href="#box" class="content-panel__link">Box</a></li>
+                            <li><a href="#layout-display" class="content-panel__link">Layout och display</a></li>
+                            <li><a href="#annat" class="content-panel__link">Annat</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </aside>
         </main>
 
-        <aside class="content-panel">
-            <p class="content-panel__title"> Innehåll </p>
 
-            <ol class="content-panel__list" type="I">
-                <li>
-                    <a href="#HTML" class="content-panel__link"> HTML </a>
-                    <ol class="content-panel__list">
-                        <li><a href="#struktur" class="content-panel__link">Struktur</a></li>
-                        <li>
-                            <a href="#semantiska-element-layout" class="content-panel__link">Sem.element och layout</a>
-                        </li>
-                        <li><a href="#text-rubriker" class="content-panel__link">Text och rubriker</a></li>
-                        <li><a href="#inline-element" class="content-panel__link">Inline element</a></li>
-                    </ol>
-                </li>
-                <li>
-                    <a href="#CSS" class="content-panel__link"> CSS </a>
-                    <ol class="content-panel__list">
-                        <li><a href="#typsnitt och text" class="content-panel__link">Typsnitt och Text</a></li>
-                        <li><a href="#färger" class="content-panel__link">Färger</a></li>
-                        <li><a href="#box" class="content-panel__link">Box</a></li>
-                        <li><a href="#layout-display" class="content-panel__link">Layout och display</a></li>
-                        <li><a href="#annat" class="content-panel__link">Annat</a></li>
-                    </ol>
-                </li>
-            </ol>
-        </aside>
     </div>
 </body>
 </html>
