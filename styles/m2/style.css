@@ -159,6 +159,11 @@ ul {
 }
 
 
+.history-hero {
+    background-image: url("assets/hero-bg.jpg");
+}
+
+
 .history-hero__content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
