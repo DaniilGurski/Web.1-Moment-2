@@ -1,0 +1,2 @@
+Link everyting after folder reorganization
+Rename styles and classes to something common. Like history-hero -> hero
