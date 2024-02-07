@@ -1,13 +1,10 @@
-options = {
-    threshold: 1,
-}
+const menuBtn = document.querySelector("#menu-btn");
+const navigation = document.querySelector(".primary-navigation")
 
-const heroSection = document.querySelector(".history-hero");
-const header = document.querySelector(".header")
+menuBtn.addEventListener("click", (event) => {
+    const expanded = !(menuBtn.getAttribute("aria-expanded") === "true"); // convert string to boolean;
 
-const sectionObserver = new IntersectionObserver(entries => {
-    header.classList.toggle("header--inverted", !entries[0].isIntersecting);
+    menuBtn.setAttribute("aria-expanded", expanded);
+    navigation.dataset.expanded = expanded;
 })
-
-sectionObserver.observe(heroSection)
 
